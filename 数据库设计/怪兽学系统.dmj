@@ -1,120 +1,219 @@
 {
   "RootName": "DataModels",
-  "CTVER": "43543331",
-  "TableCount": 1,
+  "CTVER": "43543334",
+  "TableCount": 2,
   "Count": 1,
   "items": [{
     "ID": 10,
     "Name": "安全中心",
-    "CreateDate": "2022/8/29 22:50:28",
+    "CreateDate": "2022/08/29 22:50:28",
     "OrderNo": 1,
     "Tables": {
-      "Count": 1,
-      "items": [{
-        "ID": 2,
-        "Name": "t_security_user",
-        "Caption": "用户表",
-        "CreateDate": "2022/8/29 23:26:31",
-        "OrderNo": 1,
-        "GraphDesc": "Left=96.00\r\nTop=50.00\r\nBLeft=48.00\r\nBTop=25.00",
-        "MetaFields": {
-          "Count": 11,
-          "items": [
-            {
-              "ID": 1,
-              "Name": "i_id",
-              "OrderNo": 1,
-              "DisplayName": "编号",
-              "DataType": 2,
-              "KeyFieldType": 1
-            },
-            {
-              "ID": 2,
-              "Name": "s_name",
-              "OrderNo": 2,
-              "DisplayName": "姓名",
-              "DataType": 1,
-              "Not_Nullable": true,
-              "DataLength": 32
-            },
-            {
-              "ID": 9,
-              "Name": "s_nickname",
-              "OrderNo": 3,
-              "DisplayName": "昵称",
-              "DataType": 1,
-              "DataLength": 32
-            },
-            {
-              "ID": 10,
-              "Name": "s_account",
-              "OrderNo": 4,
-              "DisplayName": "账号",
-              "DataType": 1,
-              "Not_Nullable": true,
-              "DataLength": 16
-            },
-            {
-              "ID": 11,
-              "Name": "s_email",
-              "OrderNo": 5,
-              "DisplayName": "邮箱",
-              "DataType": 1,
-              "DataLength": 32
-            },
-            {
-              "ID": 3,
-              "Name": "i_create_id",
-              "OrderNo": 6,
-              "DisplayName": "创建人id",
-              "DataType": 2,
-              "IndexType": 2,
-              "Not_Nullable": true
-            },
-            {
-              "ID": 4,
-              "Name": "s_create_name",
-              "OrderNo": 7,
-              "DisplayName": "创建人姓名",
-              "DataType": 1,
-              "DataLength": 32
-            },
-            {
-              "ID": 5,
-              "Name": "d_create_date",
-              "OrderNo": 8,
-              "DisplayName": "创建时间",
-              "DataType": 4,
-              "DefaultValue": "CURRENT_TIMESTAMP"
-            },
-            {
-              "ID": 6,
-              "Name": "i_update_id",
-              "OrderNo": 9,
-              "DisplayName": "更新人id",
-              "DataType": 2,
-              "IndexType": 2,
-              "Not_Nullable": true
-            },
-            {
-              "ID": 7,
-              "Name": "s_update_name",
-              "OrderNo": 10,
-              "DisplayName": "更新人姓名",
-              "DataType": 1,
-              "DataLength": 32
-            },
-            {
-              "ID": 8,
-              "Name": "d_update_date",
-              "OrderNo": 11,
-              "DisplayName": "更新时间",
-              "DataType": 4,
-              "DefaultValue": "CURRENT_TIMESTAMP"
-            }
-          ]
+      "Count": 2,
+      "items": [
+        {
+          "ID": 2,
+          "Name": "t_security_user",
+          "Caption": "用户表",
+          "CreateDate": "2022/08/29 23:26:31",
+          "OrderNo": 1,
+          "GraphDesc": "Left=96.00\r\nTop=50.00\r\nBLeft=48.00\r\nBTop=25.00",
+          "MetaFields": {
+            "Count": 11,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "i_id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "s_name",
+                "OrderNo": 2,
+                "DisplayName": "姓名",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 32
+              },
+              {
+                "ID": 9,
+                "Name": "s_nickname",
+                "OrderNo": 3,
+                "DisplayName": "昵称",
+                "DataType": 1,
+                "DataLength": 32
+              },
+              {
+                "ID": 10,
+                "Name": "s_account",
+                "OrderNo": 4,
+                "DisplayName": "账号",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 16
+              },
+              {
+                "ID": 11,
+                "Name": "s_email",
+                "OrderNo": 5,
+                "DisplayName": "邮箱",
+                "DataType": 1,
+                "DataLength": 32
+              },
+              {
+                "ID": 3,
+                "Name": "i_create_id",
+                "OrderNo": 6,
+                "DisplayName": "创建人id",
+                "DataType": 2,
+                "IndexType": 2,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 4,
+                "Name": "s_create_name",
+                "OrderNo": 7,
+                "DisplayName": "创建人姓名",
+                "DataType": 1,
+                "DataLength": 32
+              },
+              {
+                "ID": 5,
+                "Name": "d_create_date",
+                "OrderNo": 8,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 6,
+                "Name": "i_update_id",
+                "OrderNo": 9,
+                "DisplayName": "更新人id",
+                "DataType": 2,
+                "IndexType": 2,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 7,
+                "Name": "s_update_name",
+                "OrderNo": 10,
+                "DisplayName": "更新人姓名",
+                "DataType": 1,
+                "DataLength": 32
+              },
+              {
+                "ID": 8,
+                "Name": "d_update_date",
+                "OrderNo": 11,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              }
+            ]
+          }
+        },
+        {
+          "ID": 2,
+          "Name": "t_enumerate_type",
+          "Caption": "枚举类型表",
+          "CreateDate": "2022/12/27 20:55:54",
+          "OrderNo": 2,
+          "GraphDesc": "Left=10.00\r\nTop=348.00",
+          "MetaFields": {
+            "Count": 10,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "i_id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1
+              },
+              {
+                "ID": 2,
+                "Name": "s_enumerate_type",
+                "OrderNo": 2,
+                "DisplayName": "枚举类型",
+                "DataType": 1,
+                "DataLength": 128
+              },
+              {
+                "ID": 9,
+                "Name": "s_enumerate_name",
+                "OrderNo": 3,
+                "DisplayName": "枚举类型名称",
+                "DataType": 1,
+                "DataLength": 128
+              },
+              {
+                "ID": 10,
+                "Name": "s_remark",
+                "OrderNo": 4,
+                "DisplayName": "备注",
+                "DataType": 1,
+                "DataLength": 128
+              },
+              {
+                "ID": 3,
+                "Name": "i_create_id",
+                "OrderNo": 5,
+                "DisplayName": "创建人id",
+                "DataType": 2,
+                "IndexType": 2,
+                "Not_Nullable": true,
+                "DataLength": 19
+              },
+              {
+                "ID": 4,
+                "Name": "s_create_name",
+                "OrderNo": 6,
+                "DisplayName": "创建人姓名",
+                "DataType": 1,
+                "DataLength": 64
+              },
+              {
+                "ID": 5,
+                "Name": "d_create_date",
+                "OrderNo": 7,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 6,
+                "Name": "i_update_id",
+                "OrderNo": 8,
+                "DisplayName": "更新人id",
+                "DataType": 2,
+                "IndexType": 2,
+                "Not_Nullable": true,
+                "DataLength": 19
+              },
+              {
+                "ID": 7,
+                "Name": "s_update_name",
+                "OrderNo": 9,
+                "DisplayName": "更新人姓名",
+                "DataType": 1,
+                "DataLength": 64
+              },
+              {
+                "ID": 8,
+                "Name": "d_update_date",
+                "OrderNo": 10,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              }
+            ]
+          }
         }
-      }]
+      ]
     }
   }]
 }
