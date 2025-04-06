@@ -1,24 +1,27 @@
 {
   "RootName": "DataModels",
-  "CTVER": "43543334",
-  "TableCount": 5,
+  "CTVER": "43543338",
+  "TableCount": 6,
   "Count": 2,
   "items": [
     {
       "ID": 10,
       "Name": "安全中心",
-      "CreateDate": "2022/8/29 22:50:28",
+      "CreateDate": "2022-08-29 22:50:28",
       "OrderNo": 1,
+      "CustomAttr1": "DVS:201.00,-1188.00,1.00,0,",
+      "DefDbEngine": "MYSQL",
+      "DbConnectStr": "TCtMetaMysqlDb",
       "Tables": {
-        "Count": 2,
+        "Count": 3,
         "items": [
           {
             "ID": 2,
             "Name": "t_security_user",
             "Caption": "用户表",
-            "CreateDate": "2022/8/29 23:26:31",
+            "CreateDate": "2022-08-29 23:26:31",
             "OrderNo": 1,
-            "GraphDesc": "Left=96.00\r\nTop=50.00\r\nBLeft=48.00\r\nBTop=25.00",
+            "GraphDesc": "Left=10.00\r\nTop=10.00",
             "MetaFields": {
               "Count": 11,
               "items": [
@@ -121,9 +124,9 @@
             "ID": 2,
             "Name": "t_enumerate_type",
             "Caption": "枚举类型表",
-            "CreateDate": "2022/12/27 20:55:54",
+            "CreateDate": "2022-12-27 20:55:54",
             "OrderNo": 2,
-            "GraphDesc": "Left=10.00\r\nTop=348.00",
+            "GraphDesc": "Left=12.00\r\nTop=253.00",
             "MetaFields": {
               "Count": 10,
               "items": [
@@ -213,6 +216,107 @@
                 }
               ]
             }
+          },
+          {
+            "Name": "t_enumerate_data",
+            "Caption": "枚举数据表",
+            "OrderNo": 3,
+            "GraphDesc": "Left=296.00\r\nTop=257.00",
+            "MetaFields": {
+              "Count": 11,
+              "items": [
+                {
+                  "ID": 1,
+                  "Name": "i_id",
+                  "OrderNo": 1,
+                  "DisplayName": "编号",
+                  "DataType": 2,
+                  "Not_Nullable": true
+                },
+                {
+                  "ID": 2,
+                  "Name": "s_enumerate_type",
+                  "OrderNo": 2,
+                  "DisplayName": "枚举类型",
+                  "DataType": 1,
+                  "IndexType": 2,
+                  "DataLength": 128
+                },
+                {
+                  "ID": 3,
+                  "Name": "s_enumerate_label",
+                  "OrderNo": 3,
+                  "DisplayName": "枚举描述",
+                  "DataType": 1,
+                  "DataLength": 32
+                },
+                {
+                  "ID": 4,
+                  "Name": "s_enumerate_key",
+                  "OrderNo": 4,
+                  "DisplayName": "枚举键值",
+                  "DataType": 1,
+                  "DataLength": 128
+                },
+                {
+                  "ID": 5,
+                  "Name": "s_enumerate_sort",
+                  "OrderNo": 5,
+                  "DisplayName": "枚举排序",
+                  "DataType": 6
+                },
+                {
+                  "ID": 6,
+                  "Name": "i_create_id",
+                  "OrderNo": 6,
+                  "DisplayName": "创建人id",
+                  "DataType": 2,
+                  "IndexType": 2,
+                  "Not_Nullable": true
+                },
+                {
+                  "ID": 7,
+                  "Name": "s_create_name",
+                  "OrderNo": 7,
+                  "DisplayName": "创建人姓名",
+                  "DataType": 1,
+                  "DataLength": 64
+                },
+                {
+                  "ID": 8,
+                  "Name": "d_create_date",
+                  "OrderNo": 8,
+                  "DisplayName": "创建时间",
+                  "DataType": 4,
+                  "DefaultValue": "CURRENT_TIMESTAMP"
+                },
+                {
+                  "ID": 9,
+                  "Name": "i_update_id",
+                  "OrderNo": 9,
+                  "DisplayName": "更新人id",
+                  "DataType": 2,
+                  "IndexType": 2,
+                  "Not_Nullable": true
+                },
+                {
+                  "ID": 10,
+                  "Name": "s_update_name",
+                  "OrderNo": 10,
+                  "DisplayName": "更新人姓名",
+                  "DataType": 1,
+                  "DataLength": 64
+                },
+                {
+                  "ID": 11,
+                  "Name": "d_update_date",
+                  "OrderNo": 11,
+                  "DisplayName": "更新时间",
+                  "DataType": 4,
+                  "DefaultValue": "CURRENT_TIMESTAMP"
+                }
+              ]
+            }
           }
         ]
       }
@@ -220,8 +324,9 @@
     {
       "ID": 4,
       "Name": "戴森球",
-      "CreateDate": "2023/12/31 17:45:39",
+      "CreateDate": "2023-12-31 17:45:39",
       "OrderNo": 2,
+      "CustomAttr1": "DVS:241.00,132.00,1.00,0,",
       "ConfigStr": "DrawerWidth=1500\r\nDrawerHeight=797\r\nWorkAreaColor=16777215\r\nSelectedColor=16711680\r\nDefaultObjectColor=15921906\r\nDefaultTitleColor=255\r\nDefaultPKColor=16711935\r\nDefaultFKColor=16711680\r\nDefaultBorderColor=12632256\r\nDefaultLineColor=16711680\r\nShowFieldType=1\r\nShowFieldIcon=1\r\nShowPhyFieldName=2\r\nDatabaseEngine=\r\nGenFKIndexesSQL=0\r\nIndependPosForOverviewMode=0\r\n",
       "Tables": {
         "Count": 3,
@@ -230,7 +335,7 @@
             "ID": 3,
             "Name": "t_inventory",
             "Caption": "基础清单",
-            "CreateDate": "2023/12/31 17:51:10",
+            "CreateDate": "2023-12-31 17:51:10",
             "OrderNo": 1,
             "GraphDesc": "Left=358.00\r\nTop=10.00",
             "MetaFields": {
@@ -297,7 +402,7 @@
             "ID": 5,
             "Name": "t_recipe",
             "Caption": "配方表",
-            "CreateDate": "2023/12/31 18:33:29",
+            "CreateDate": "2023-12-31 18:33:29",
             "OrderNo": 2,
             "GraphDesc": "Left=92.50\r\nTop=225.00",
             "MetaFields": {
@@ -322,7 +427,7 @@
                   "RelateTable": "t_inventory",
                   "RelateField": "i_id",
                   "DataLength": 20,
-                  "GraphDesc": "P1=394.00,128.00\r\nP2=394.00,176.00\r\nP3=344.00,176.00\r\nP4=344.00,225.00\r\nHookP1=36.00,82.00\r\nHookP2=251.50,36.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+                  "GraphDesc": "P1=410.00,128.00\r\nP2=410.00,176.00\r\nP3=360.00,176.00\r\nP4=360.00,225.00\r\nHookP1=52.00,98.00\r\nHookP2=267.50,20.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
                 },
                 {
                   "ID": 48,
@@ -351,7 +456,7 @@
                   "RelateTable": "t_inventory",
                   "RelateField": "i_id",
                   "DataLength": 20,
-                  "GraphDesc": "P1=378.00,128.00\r\nP2=378.00,160.00\r\nP3=312.00,160.00\r\nP4=312.00,225.00\r\nHookP1=20.00,98.00\r\nHookP2=219.50,20.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+                  "GraphDesc": "P1=386.00,128.00\r\nP2=386.00,160.00\r\nP3=352.00,160.00\r\nP4=352.00,225.00\r\nHookP1=28.00,90.00\r\nHookP2=259.50,28.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
                 },
                 {
                   "ID": 2,
@@ -404,7 +509,7 @@
             "ID": 7,
             "Name": "t_recipe_info",
             "Caption": "配方明细",
-            "CreateDate": "2023/12/31 18:52:49",
+            "CreateDate": "2023-12-31 18:52:49",
             "OrderNo": 3,
             "GraphDesc": "Left=10.00\r\nTop=17.00",
             "MetaFields": {
@@ -429,7 +534,7 @@
                   "RelateTable": "t_recipe",
                   "RelateField": "i_id",
                   "DataLength": 20,
-                  "GraphDesc": "P1=170.00,225.00\r\nP2=170.00,172.00\r\nP3=170.00,172.00\r\nP4=170.00,119.00\r\nHookP1=77.50,28.00\r\nHookP2=160.00,82.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+                  "GraphDesc": "P1=170.00,225.00\r\nP2=170.00,172.00\r\nP3=170.00,172.00\r\nP4=170.00,119.00\r\nHookP1=77.50,36.00\r\nHookP2=160.00,82.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
                 },
                 {
                   "ID": 13,
@@ -441,7 +546,7 @@
                   "RelateTable": "t_inventory",
                   "RelateField": "i_id",
                   "DataLength": 20,
-                  "GraphDesc": "P1=358.00,76.00\r\nP2=302.00,76.00\r\nP3=302.00,76.00\r\nP4=247.00,76.00\r\nHookP1=28.00,66.00\r\nHookP2=209.00,59.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+                  "GraphDesc": "P1=358.00,76.00\r\nP2=302.00,76.00\r\nP3=302.00,76.00\r\nP4=247.00,76.00\r\nHookP1=36.00,66.00\r\nHookP2=209.00,59.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
                 },
                 {
                   "ID": 15,
